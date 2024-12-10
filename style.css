@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
@@ -15,31 +15,81 @@ h1 {
     color: #555;
 }
 
-.scoreboard {
+.configuracion {
     display: flex;
-    justify-content: space-between;
-    width: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jugador {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.boton:hover {
+    background-color: #45a049;
+}
+
+.jugadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .player {
-    background: #e0e0e0;
     padding: 10px 20px;
+    background: #e0e0e0;
     border-radius: 8px;
+    margin: 0 20px;
+    width: 150px;
 }
 
-.spaces {
-    background: #ffffff00;
-    padding: 10px 15px;
-    border-radius: 8px;
+.puntajes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .tablero {
     display: grid;
     grid-template-columns: repeat(3, 150px);
     grid-gap: 10px;
+    margin-top: 20px;
 }
 
 button {
